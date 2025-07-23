@@ -94,6 +94,35 @@
       color: #ffd700;
       margin-top: 10px;
     }
+
+    /* Responsive tweaks for mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 3em;
+        padding: 10px 0;
+      }
+
+      .instagram-embed {
+        flex: 0 0 180px;
+        max-width: 180px;
+        min-width: 150px;
+        margin-top: 20px;
+      }
+
+      .catalog {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
   </style>
 </head>
 <body>
