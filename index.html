@@ -10,13 +10,20 @@
       padding: 40px;
       font-family: 'Segoe UI', sans-serif;
 
-      /* 🔥 CHANGE THE LINE BELOW TO YOUR BACKGROUND IMAGE 🔥 */
-      background-image: url('logo PFF.PNG'); /* ← CHANGE THIS */
+      /* 🔥 Desktop Background Image 🔥 */
+      background-image: url('logo PFF.PNG'); /* <-- CHANGE THIS (Desktop image) */
       
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: #f0e6d2;
+    }
+
+    /* ✅ Mobile background image */
+    @media (max-width: 600px) {
+      body {
+        background-image: url('mobile-background.jpg'); /* <-- CHANGE THIS (Mobile image) */
+      }
     }
 
     .header-container {
