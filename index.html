@@ -11,40 +11,42 @@
       font-family: 'Segoe UI', sans-serif;
       padding: 40px;
     }
-    /* Container for title and embed side by side */
+
     .header-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      max-width: 100%;
-      margin-bottom: 40px;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
     }
-    h1 {
-      color: #ff8c00;
-      font-size: 3em;
-      margin: 0;
+
+    .header-logo {
+      height: 33px;
       flex: 1 1 auto;
-      min-width: 200px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
     }
-    /* Instagram embed container */
+
     .instagram-embed {
-      flex: 0 0 270px; /* fixed width */
+      flex: 0 0 270px;
       max-width: 270px;
       min-width: 200px;
     }
-    /* Override instagram blockquote max-width */
+
     .instagram-embed blockquote.instagram-media {
       max-width: 270px !important;
       margin: 0 auto !important;
     }
+
     .catalog {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
+
     .item {
       background: #2b2b2b;
       border: 2px solid #ff4500;
@@ -53,21 +55,26 @@
       box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
       transition: transform 0.2s ease;
     }
+
     .item:hover {
       transform: scale(1.03);
     }
+
     .item img {
       width: 100%;
       border-radius: 12px;
       margin-bottom: 15px;
     }
+
     .item h2 {
       color: #ff8c00;
       font-size: 1.5em;
     }
+
     .item p {
       font-size: 1em;
     }
+
     .price {
       font-size: 1.3em;
       color: #ffd700;
@@ -78,9 +85,9 @@
 <body>
 
   <div class="header-container">
-    <h1>Phoenix Fire and Forge</h1>
+    <img src="logo PFF.PNG" alt="Phoenix Fire and Forge Logo" class="header-logo" />
     <div class="instagram-embed">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width: 100% !important; max-width: 270px !important; min-width: 200px !important;">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width: 100% !important; max-width: 270px !important; min-width: 200px !important;">
       </blockquote>
     </div>
   </div>
@@ -95,7 +102,7 @@
     </div>
 
     <div class="item">
-      <img src="IMG_roaster stand.PNG" alt="roaster stand" />
+      <img src="IMG_roaster stand.PNG" alt="Roaster Stand" />
       <h2>Camp fire roaster stand</h2>
       <p>Crafted from hand-forged, durable steel, this campfire roaster stand is built to withstand outdoor adventures. Its adjustable height feature ensures precise cooking for hot dogs, marshmallows, and more. Designed for easy setup, it's a practical addition to any campfire gathering for a perfectly cooked treat every time.</p>
       <div class="price">$25.00</div>
@@ -130,7 +137,7 @@
     </div>
 
     <div class="item">
-      <img src="IMG_spike cross.PNG" alt="Rail road spike cross" />
+      <img src="IMG_spike cross.PNG" alt="Railroad spike cross" />
       <h2>Rail road spike cross</h2>
       <p>This handcrafted cross is forged from a single steel railroad spike, showcasing exceptional craftsmanship. The spike is skillfully cut, folded, and shaped, creating a unique and durable design. With a flattened bottom, it stands securely, making it an ideal decorative piece. Its rustic charm and intricate detailing make it a standout addition to any space.</p>
       <div class="price">$45.00</div>
