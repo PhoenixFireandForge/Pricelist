@@ -6,29 +6,41 @@
   <title>Phoenix Fire and Forge - Price List</title>
   <style>
     body {
-      background-color: #1a1a1a;
-      color: #f0e6d2;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+
+      /* 🔥 CHANGE THE LINE BELOW TO YOUR BACKGROUND IMAGE 🔥 */
+      background-image: url('logo PFF.PNG'); /* ← CHANGE THIS */
+      
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f0e6d2;
     }
 
     .header-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
       margin-bottom: 40px;
     }
 
-    .header-logo {
-      aspect-ratio: 9 / 16;
-      height: 480px;
-      max-height: 80vh;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-      flex: 1 1 auto;
+    h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      width: 100%;
+      text-shadow:
+        -2px -2px 0 #ff0000,
+         2px -2px 0 #ffd700,
+        -2px  2px 0 #ffd700,
+         2px  2px 0 #ff0000;
+      margin: 0;
+      padding: 20px 0;
     }
 
     .instagram-embed {
@@ -50,7 +62,7 @@
     }
 
     .item {
-      background: #2b2b2b;
+      background: rgba(43, 43, 43, 0.9);
       border: 2px solid #ff4500;
       border-radius: 16px;
       padding: 20px;
@@ -87,80 +99,82 @@
 <body>
 
   <div class="header-container">
-    <img src="logo PFF.PNG" alt="Phoenix Fire and Forge Logo" class="header-logo" /> <!-- 👈 Replace with your actual image path -->
+    <h1>PHOENIX FIRE AND FORGE</h1>
     <div class="instagram-embed">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width: 100% !important; max-width: 270px !important; min-width: 200px !important;">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/"
+        data-instgrm-version="14"
+        style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; padding:0; width:100% !important; max-width:270px !important; min-width:200px !important;">
       </blockquote>
     </div>
   </div>
 
   <div class="catalog">
-
     <div class="item">
       <img src="IMG_cup holder.jpg" alt="Cup Holder" />
       <h2>Camp fire cup holders</h2>
-      <p>Hand-forged from durable materials, these campfire cup holders offer a convenient and easy-to-install design, perfect for camping and outdoor gatherings. Keep your drinks secure and within reach around the fire.</p>
+      <p>Hand-forged from durable materials, these campfire cup holders offer a convenient and easy-to-install design, perfect for camping and outdoor gatherings.</p>
       <div class="price">$25.00</div>
     </div>
 
     <div class="item">
       <img src="IMG_roaster stand.PNG" alt="Roaster Stand" />
       <h2>Camp fire roaster stand</h2>
-      <p>Crafted from hand-forged, durable steel, this campfire roaster stand is built to withstand outdoor adventures. Its adjustable height feature ensures precise cooking for hot dogs, marshmallows, and more. Designed for easy setup, it's a practical addition to any campfire gathering for a perfectly cooked treat every time.</p>
+      <p>Crafted from hand-forged steel with adjustable height for precise cooking. Easy setup — a practical addition to any campfire gathering.</p>
       <div class="price">$25.00</div>
     </div>
 
     <div class="item">
       <img src="IMG_candle holder.PNG" alt="Candle Holder" />
       <h2>Candle carrier</h2>
-      <p>This hand-forged candle carrier combines a stylish design with durable steel construction for long-lasting use. Its versatile design makes it suitable for a variety of settings, from home decor to outdoor gatherings. A practical and elegant solution for holding candles securely.</p>
+      <p>This stylish and durable hand-forged candle carrier suits both home decor and outdoor gatherings.</p>
       <div class="price">$40.00</div>
     </div>
 
     <div class="item">
-      <img src="IMG_bellow pipe.jpg" alt="Fire pit Bellow pipe" />
-      <h2>Fire pit Bellow pipe</h2>
-      <p>This hand-forged fire pit bellow pipe is crafted from durable steel and treated with canola oil for rust protection. Designed for efficient airflow, it helps you easily ignite embers and maintain your fire. Built for functionality and durability, it's an essential tool for any outdoor fire setup.</p>
+      <img src="IMG_bellow pipe.jpg" alt="Fire Pit Bellow Pipe" />
+      <h2>Fire pit bellow pipe</h2>
+      <p>Made from forged steel, rust-protected with canola oil. Helps ignite and maintain outdoor fires with ease.</p>
       <div class="price">$20.00</div>
     </div>
 
     <div class="item">
-      <img src="IMG_fire poker.jpg" alt="Fire poker" />
+      <img src="IMG_fire poker.jpg" alt="Fire Poker" />
       <h2>Fire poker</h2>
-      <p>This hand-forged fire poker is crafted from durable tool steel for long-lasting performance. Its heat-resistant design ensures safe use around high temperatures, while the ergonomic grip with a twisted point provides comfort and precision. Perfect for managing fires in fireplaces, fire pits, wood stoves, and offset smokers!</p>
+      <p>Durable tool steel, heat-resistant, ergonomic twisted handle. Great for fireplaces, stoves, pits, and smokers.</p>
       <div class="price">$50.00</div>
     </div>
 
     <div class="item">
-      <img src="IMG_hanging cross.JPG" alt="Hanging folded cross" />
+      <img src="IMG_hanging cross.JPG" alt="Hanging Folded Cross" />
       <h2>Hanging folded cross</h2>
-      <p>Crafted from a single piece of steel, this hanging folded cross seamlessly combines durability with elegance. Unfolded into a striking cross shape, it showcases a minimalist yet bold design. Perfect for hanging, it adds a unique and meaningful touch to any space.</p>
+      <p>Made from a single steel piece. Elegant, minimalist design for a meaningful wall or space addition.</p>
       <div class="price">$35.00</div>
     </div>
 
     <div class="item">
-      <img src="IMG_spike cross.PNG" alt="Railroad spike cross" />
-      <h2>Rail road spike cross</h2>
-      <p>This handcrafted cross is forged from a single steel railroad spike, showcasing exceptional craftsmanship. The spike is skillfully cut, folded, and shaped, creating a unique and durable design. With a flattened bottom, it stands securely, making it an ideal decorative piece. Its rustic charm and intricate detailing make it a standout addition to any space.</p>
+      <img src="IMG_spike cross.PNG" alt="Railroad Spike Cross" />
+      <h2>Railroad spike cross</h2>
+      <p>Forged from a steel railroad spike. Unique, rustic, and durable — stands on its own with bold craftsmanship.</p>
       <div class="price">$45.00</div>
     </div>
 
     <div class="item">
       <img src="IMG_steak flipper.PNG" alt="Steak Flipper" />
-      <h2>Steak Flipper</h2>
-      <p>This hand-forged steak flipper features a durable design and an ergonomic handle for comfortable use. A versatile tool perfect for flipping steaks and other grill favorites with ease.</p>
+      <h2>Steak flipper</h2>
+      <p>Hand-forged with an ergonomic handle. Perfect for flipping steaks and other grilled items.</p>
       <div class="price">$30.00</div>
     </div>
-
   </div>
 
   <script async src="https://www.instagram.com/embed.js"></script>
   <script>
     window.addEventListener('load', () => {
-      if(window.instgrm) {
+      if (window.instgrm) {
         window.instgrm.Embeds.process();
       }
     });
   </script>
+
 </body>
 </html>
