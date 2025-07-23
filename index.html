@@ -12,17 +12,21 @@
 
       /* 🔥 Desktop Background Image 🔥 */
       background-image: url('logo PFF.PNG'); /* <-- CHANGE THIS (Desktop image) */
-      
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: #f0e6d2;
+      background-color: #000; /* Fallback color */
     }
 
-    /* ✅ Mobile background image */
+    /* ✅ Mobile background image (prevent zoom) */
     @media (max-width: 600px) {
       body {
         background-image: url('website mobile background.png'); /* <-- CHANGE THIS (Mobile image) */
+        background-size: contain; /* ✅ Show full image without zoom */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000; /* Fallback behind image */
       }
     }
 
