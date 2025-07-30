@@ -143,6 +143,26 @@
       color: #ffd700;
       margin-top: 10px;
     }
+
+    /* Social icons container styling */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
@@ -150,6 +170,8 @@
   <div class="header-container">
     <h1>PHOENIX FIRE AND FORGE</h1>
   </div>
+
+  <!-- Social icons will be inserted here by script -->
 
   <div class="catalog">
 
@@ -181,13 +203,13 @@
       <div class="price">$25.00</div>
     </div>
 
-<div class="item">
-  <img src="BBQ forks.jpg" alt="BBQ Fork" />
-  <h2>BBQ Fork</h2>
-  <p>This hand-forged BBQ fork is crafted from durable steel, ensuring long-lasting performance for all your grilling needs. Its comfortable grip provides ease of use, making it ideal for extended cooking sessions. With a multi-functional design, it’s perfect for turning, lifting, and serving a variety of grilled foods effortlessly.</p>
-  <div class="price">$30.00</div>
-</div>
-    
+    <div class="item">
+      <img src="BBQ forks.jpg" alt="BBQ Fork" />
+      <h2>BBQ Fork</h2>
+      <p>This hand-forged BBQ fork is crafted from durable steel, ensuring long-lasting performance for all your grilling needs. Its comfortable grip provides ease of use, making it ideal for extended cooking sessions. With a multi-functional design, it’s perfect for turning, lifting, and serving a variety of grilled foods effortlessly.</p>
+      <div class="price">$30.00</div>
+    </div>
+
     <div class="item">
       <img src="IMG_bellow pipe.jpg" alt="Fire Pit Bellow Pipe" />
       <h2>Fire pit bellow pipe</h2>
@@ -202,27 +224,27 @@
       <div class="price">$40.00</div>
     </div>
 
-<div class="item">
-  <img src="trianle dinner bell.jpg" alt="Triangle Dinner Bell" />
-  <h2>Triangle Dinner Bell</h2>
-  <p>This hand-forged triangle dinner bell with ringer combines rustic design with timeless functionality. Crafted from durable metal, it produces a classic western sound perfect for gatherings or signaling mealtime. Its easy-to-use design makes it a charming addition to any home or outdoor space.</p>
-  <div class="price">$35.00</div>
-</div>
-    
-<div class="item">
-  <img src="leaf keychain.jpg" alt="Leaf Keychain" />
-  <h2>Leaf Keychain</h2>
-  <p>This hand-forged leaf keychain features a nature-inspired design that adds a unique touch to your everyday essentials. Crafted from durable materials, it ensures long-lasting use while maintaining its elegant appearance. Its convenient size makes it easy to carry and perfect for securing your keys in style.</p>
-  <div class="price">$10.00</div>
-</div>
+    <div class="item">
+      <img src="trianle dinner bell.jpg" alt="Triangle Dinner Bell" />
+      <h2>Triangle Dinner Bell</h2>
+      <p>This hand-forged triangle dinner bell with ringer combines rustic design with timeless functionality. Crafted from durable metal, it produces a classic western sound perfect for gatherings or signaling mealtime. Its easy-to-use design makes it a charming addition to any home or outdoor space.</p>
+      <div class="price">$35.00</div>
+    </div>
 
-<div class="item">
-  <img src="rail spike bottle openers.jpg" alt="Railroad Spike Bottle Opener" />
-  <h2>Railroad Spike Bottle Opener</h2>
-  <p>This bottle opener is crafted from a genuine steel railroad spike, blending durability with a distinctive, industrial aesthetic. Its unique design ensures reliable functionality while doubling as a conversation piece. Perfect for opening bottles with ease, it adds a touch of rustic charm to any kitchen or bar setup. A versatile and practical tool inspired by timeless craftsmanship.</p>
-  <div class="price">$25.00</div>
-</div>
-    
+    <div class="item">
+      <img src="leaf keychain.jpg" alt="Leaf Keychain" />
+      <h2>Leaf Keychain</h2>
+      <p>This hand-forged leaf keychain features a nature-inspired design that adds a unique touch to your everyday essentials. Crafted from durable materials, it ensures long-lasting use while maintaining its elegant appearance. Its convenient size makes it easy to carry and perfect for securing your keys in style.</p>
+      <div class="price">$10.00</div>
+    </div>
+
+    <div class="item">
+      <img src="rail spike bottle openers.jpg" alt="Railroad Spike Bottle Opener" />
+      <h2>Railroad Spike Bottle Opener</h2>
+      <p>This bottle opener is crafted from a genuine steel railroad spike, blending durability with a distinctive, industrial aesthetic. Its unique design ensures reliable functionality while doubling as a conversation piece. Perfect for opening bottles with ease, it adds a touch of rustic charm to any kitchen or bar setup. A versatile and practical tool inspired by timeless craftsmanship.</p>
+      <div class="price">$25.00</div>
+    </div>
+
     <div class="item">
       <img src="IMG_spike cross.PNG" alt="Railroad Spike Cross" />
       <h2>Railroad spike cross</h2>
@@ -253,6 +275,45 @@
       if (window.instgrm) {
         window.instgrm.Embeds.process();
       }
+    });
+  </script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.header-container');
+
+      // Create container div
+      const socialDiv = document.createElement('div');
+      socialDiv.className = 'social-links';
+
+      // Facebook link & image
+      const fbLink = document.createElement('a');
+      fbLink.href = 'https://www.facebook.com/share/g/1BrMC8yqgF/';
+      fbLink.target = '_blank';
+      fbLink.title = 'Join us on Facebook';
+
+      const fbImg = document.createElement('img');
+      fbImg.src = 'YOUR_FACEBOOK_ICON_URL_HERE'; // <-- Replace with your Facebook icon URL
+      fbImg.alt = 'Facebook';
+
+      fbLink.appendChild(fbImg);
+      socialDiv.appendChild(fbLink);
+
+      // Instagram link & image
+      const instaLink = document.createElement('a');
+      instaLink.href = 'https://www.instagram.com/phoenixFireandForge';
+      instaLink.target = '_blank';
+      instaLink.title = 'Follow us on Instagram';
+
+      const instaImg = document.createElement('img');
+      instaImg.src = 'YOUR_INSTAGRAM_ICON_URL_HERE'; // <-- Replace with your Instagram icon URL
+      instaImg.alt = 'Instagram';
+
+      instaLink.appendChild(instaImg);
+      socialDiv.appendChild(instaLink);
+
+      // Insert social links div right after the header
+      header.insertAdjacentElement('afterend', socialDiv);
     });
   </script>
 
