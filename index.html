@@ -72,30 +72,6 @@
       }
     }
 
-    /* Navigation bar styling */
-    .nav-bar {
-      background-color: rgba(43, 43, 43, 0.9);
-      padding: 10px 20px;
-      text-align: right;
-      border-bottom: 2px solid #ff4500;
-      font-family: 'Segoe UI', sans-serif;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-bar a {
-      color: #ffd700;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 1.2em;
-      transition: color 0.2s ease;
-    }
-
-    .nav-bar a:hover {
-      color: #ff8c00;
-    }
-
     .header-container {
       display: flex;
       justify-content: center;
@@ -115,6 +91,38 @@
       -webkit-text-stroke: 1px #000;
       margin: 0;
       padding: 20px 0;
+    }
+
+    /* NAVIGATION BAR STYLES */
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0 0 30px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff8c00;
+    }
+
+    nav ul li a.active {
+      font-weight: 900;
+      text-decoration: underline;
+      color: #ff4500;
     }
 
     .instagram-embed {
@@ -191,9 +199,14 @@
 </head>
 <body>
 
-  <nav class="nav-bar">
-    <a href="about.html">About</a>
+  <!-- NAVIGATION BAR - ADD HERE -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Price List</a></li>
+      <li><a href="aboutpage.html">About</a></li>
+    </ul>
   </nav>
+  <!-- END NAVIGATION BAR -->
 
   <div class="header-container">
     <h1>PHOENIX FIRE AND FORGE</h1>
@@ -347,4 +360,3 @@
 
 </body>
 </html>
-
