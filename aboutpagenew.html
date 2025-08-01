@@ -43,41 +43,32 @@
     nav {
       margin-bottom: 30px;
       position: relative;
+      height: 72px;
     }
 
     nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      align-items: center;
+      height: 100%;
       position: relative;
     }
 
-    nav ul li:nth-child(1) {
+    nav ul li {
       position: absolute;
       top: 0;
+    }
+
+    nav ul li.left-button {
       left: 0;
     }
 
-    nav ul li:nth-child(2) {
-      position: absolute;
-      top: 0;
+    nav ul li.right-button {
       right: 0;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: #ffd700;
-      font-weight: 600;
-      font-size: 1.2em;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #ff8c00;
     }
 
     nav ul li img {
@@ -159,14 +150,14 @@
   <!-- Navigation Bar -->
   <nav>
     <ul>
-      <li>
+      <li class="left-button">
         <a href="index.html">
           <img src="home button.png" alt="Home Button" />
         </a>
       </li>
-      <li>
+      <li class="right-button">
         <a href="pricelist.html">
-          <img src="price list button.PNG" alt="About Button" />
+          <img src="price list button.PNG" alt="Price List Button" />
         </a>
       </li>
     </ul>
