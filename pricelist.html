@@ -45,6 +45,10 @@
         padding: 10px 0;
       }
 
+      h2.subtitle {
+        font-size: 1.5em;
+      }
+
       .catalog {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -71,10 +75,11 @@
 
     .header-container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 10px;
       margin-bottom: 40px;
     }
 
@@ -87,7 +92,18 @@
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.95);
       -webkit-text-stroke: 1px #000;
       margin: 0;
-      padding: 20px 0;
+      padding: 20px 0 0 0;
+    }
+
+    h2.subtitle {
+      font-family: 'Almendra', serif;
+      font-size: 3em;
+      font-weight: 900;
+      color: #e0d5b9;
+      text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.85);
+      -webkit-text-stroke: 0.7px #000;
+      margin: 0;
+      padding: 0 0 20px 0;
     }
 
     nav {
@@ -106,12 +122,13 @@
       position: relative;
     }
 
-    nav ul li:first-child {
+    /* Move home button to left, about button to right */
+    nav ul li:nth-child(1) {
       position: absolute;
       left: 0;
     }
 
-    nav ul li:last-child {
+    nav ul li:nth-child(2) {
       position: absolute;
       right: 0;
     }
@@ -223,13 +240,14 @@
   <!-- NAVIGATION -->
   <nav>
     <ul>
+      <li>
         <a href="index.html">
-          <img src="home button.png" alt="Image Link 1" />
+          <img src="home button.png" alt="Home Button" />
         </a>
       </li>
       <li>
         <a href="aboutpagenew.html">
-          <img src="about button.png" alt="Image Link 2" />
+          <img src="about button.png" alt="About Button" />
         </a>
       </li>
     </ul>
@@ -237,6 +255,7 @@
 
   <div class="header-container">
     <h1>PHOENIX FIRE AND FORGE</h1>
+    <h2 class="subtitle">Price List</h2>
   </div>
 
   <div class="social-links">
