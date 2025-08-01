@@ -41,23 +41,15 @@
     }
 
     nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 20px;
+      height: 72px;
       margin-bottom: 30px;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-    }
-
-    nav ul li img {
+    nav a img {
       width: 144px;
       height: 72px;
       object-fit: cover;
@@ -66,7 +58,7 @@
       transition: transform 0.2s ease;
     }
 
-    nav ul li img:hover {
+    nav a img:hover {
       transform: scale(1.05);
     }
 
@@ -135,18 +127,12 @@
 
   <!-- Navigation Bar -->
   <nav>
-    <ul>
-      <li>
-        <a href="index.html">
-          <img src="home button.png" alt="Home Button" />
-        </a>
-      </li>
-      <li>
-        <a href="pricelist.html">
-          <img src="price list button.PNG" alt="Price List Button" />
-        </a>
-      </li>
-    </ul>
+    <a href="index.html">
+      <img src="home button.png" alt="Home Button" />
+    </a>
+    <a href="pricelist.html">
+      <img src="price list button.PNG" alt="Price List Button" />
+    </a>
   </nav>
 
   <div class="content-container">
@@ -187,4 +173,3 @@
 
 </body>
 </html>
-
