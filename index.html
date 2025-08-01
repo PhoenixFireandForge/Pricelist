@@ -67,34 +67,35 @@
     .next-market-container {
       margin-top: 60px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .market-title {
+      font-family: 'Almendra', serif;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px black;
     }
 
     .next-market-image-wrapper {
-      position: relative;
       width: 250px;
       border: 4px solid #e0d5b9;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.4s ease;
+    }
+
+    .next-market-image-wrapper:hover {
+      transform: scale(2); /* 🚀 Enlarges image on hover */
+      z-index: 100;
     }
 
     .next-market-image {
       width: 100%;
       display: block;
-      opacity: 0.85;
-    }
-
-    .market-text-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: 'Almendra', serif;
-      font-size: 1.5rem;
-      color: white;
-      text-shadow: 2px 2px 4px black;
-      pointer-events: none;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -117,9 +118,9 @@
 
     <!-- 📍 Next Market Section -->
     <div class="next-market-container">
+      <div class="market-title">My Next Market</div>
       <div class="next-market-image-wrapper">
         <img src="weyburn market august 2nd.jpg" alt="Next Market Location" class="next-market-image" />
-        <div class="market-text-overlay">My Next Market</div>
       </div>
     </div>
 
