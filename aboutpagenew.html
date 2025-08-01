@@ -15,7 +15,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #f0e6d2;
-      background-image: url('logo PFF.PNG'); /* same background as main site */
+      background-image: url('logo PFF.PNG');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -33,6 +33,64 @@
         background-position: top center;
         background-attachment: scroll;
       }
+
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    nav {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      position: relative;
+    }
+
+    nav ul li:nth-child(1) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    nav ul li:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff8c00;
+    }
+
+    nav ul li img {
+      width: 144px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ff8c00;
+      transition: transform 0.2s ease;
+    }
+
+    nav ul li img:hover {
+      transform: scale(1.05);
     }
 
     h1, h2 {
@@ -85,7 +143,6 @@
       padding-left: 15px;
     }
 
-    /* Optional container for content */
     .content-container {
       background: rgba(43, 43, 43, 0.9);
       border: 2px solid #ff4500;
@@ -98,6 +155,22 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">
+          <img src="home button.png" alt="Home Button" />
+        </a>
+      </li>
+      <li>
+        <a href="aboutpagenew.html">
+          <img src="about button.png" alt="About Button" />
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <div class="content-container">
     <h1>🔥 About Phoenix Fire and Forge</h1>
