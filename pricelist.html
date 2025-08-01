@@ -135,16 +135,6 @@
       transform: scale(1.05);
     }
 
-    .instagram-embed {
-      max-width: 270px;
-      margin: 40px auto 0;
-    }
-
-    .instagram-embed blockquote.instagram-media {
-      max-width: 270px !important;
-      margin: 0 auto !important;
-    }
-
     .catalog {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -204,142 +194,105 @@
     .social-links img:hover {
       transform: scale(1.1);
     }
+
+    .corner-btn {
+      position: absolute;
+      top: 10px;
+      z-index: 1000;
+    }
+
+    .corner-btn img {
+      width: 144px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ff8c00;
+      transition: transform 0.2s ease;
+    }
+
+    .corner-btn img:hover {
+      transform: scale(1.05);
+    }
+
+    .home-btn {
+      left: 10px;
+    }
+
+    .about-btn {
+      right: 10px;
+    }
   </style>
 </head>
 <body>
+<a href="index.html" class="corner-btn home-btn">
+  <img src="home button.png" alt="Home" />
+</a>
+<a href="aboutpagenew.html" class="corner-btn about-btn">
+  <img src="about button.png" alt="About" />
+</a>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Price List</a></li>
-      <li>
-        <a href="index.html">
-          <img src="home button.png" alt="Image Link 1" />
-        </a>
-      </li>
-      <li>
-        <a href="aboutpagenew.html">
-          <img src="about button.png" alt="Image Link 2" />
-        </a>
-      </li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Price List</a></li>
+    <li>
+      <a href="index.html">
+        <img src="home button.png" alt="Home" />
+      </a>
+    </li>
+    <li>
+      <a href="aboutpagenew.html">
+        <img src="about button.png" alt="About" />
+      </a>
+    </li>
+  </ul>
+</nav>
 
-  <div class="header-container">
-    <h1>PHOENIX FIRE AND FORGE</h1>
+<div class="header-container">
+  <h1>PHOENIX FIRE AND FORGE</h1>
+</div>
+
+<div class="social-links">
+  <a href="https://www.facebook.com/share/g/1BrMC8yqgF/" target="_blank" title="Join us on Facebook">
+    <img src="fire facebook logo.png" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/phoenixFireandForge" target="_blank" title="Follow us on Instagram">
+    <img src="fire instagram.png" alt="Instagram" />
+  </a>
+</div>
+
+<div class="catalog">
+  <div class="item">
+    <img src="steak flipper.png" alt="Steak Flipper" />
+    <h2>Steak Flipper</h2>
+    <p>Hand forged from a single piece of steel, twisted for style and grip. Designed for flipping steaks on the grill or campfire.</p>
+    <div class="price">$40</div>
   </div>
-
-  <div class="social-links">
-    <a href="https://www.facebook.com/share/g/1BrMC8yqgF/" target="_blank" title="Join us on Facebook">
-      <img src="fire facebook logo.png" alt="Facebook" />
-    </a>
-    <a href="https://www.instagram.com/phoenixFireandForge" target="_blank" title="Follow us on Instagram">
-      <img src="fire instagram.png" alt="Instagram" />
-    </a>
+  <div class="item">
+    <img src="bottle opener.png" alt="Bottle Opener" />
+    <h2>Bottle Opener</h2>
+    <p>Compact and stylish bottle opener made with blacksmithing techniques. Perfect for home or on the go.</p>
+    <div class="price">$20</div>
   </div>
-
-  <div class="catalog">
-    <div class="item">
-      <img src="new fire pokers.jpg" alt="Fire poker" />
-      <h2>Fire Poker</h2>
-      <p>This hand-forged fire poker is crafted from durable tool steel for long-lasting performance. Its heat-resistant design ensures safe use around high temperatures, while the ergonomic grip with a twisted point provides comfort and precision. Perfect for managing fires in fireplaces, fire pits, wood stoves, and offset smokers!</p>
-      <div class="price">$50.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_steak flipper.PNG" alt="Steak Flipper" />
-      <h2>Steak Flipper</h2>
-      <p>This hand-forged steak flipper features a durable design and an ergonomic handle for comfortable use. A versatile tool perfect for flipping steaks and other grill favorites with ease.</p>
-      <div class="price">$30.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_cup holder.jpg" alt="Cup Holder" />
-      <h2>Camp Fire Cup Holders</h2>
-      <p>Hand-forged from durable materials, these campfire cup holders offer a convenient and easy-to-install design, perfect for camping and outdoor gatherings. Keep your drinks secure and within reach around the fire.</p>
-      <div class="price">$25.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_roaster stand.PNG" alt="Roaster Stand" />
-      <h2>Camp Fire Roaster Stand</h2>
-      <p>Crafted from hand-forged, durable steel, this campfire roaster stand is built to withstand outdoor adventures. Its adjustable height feature ensures precise cooking for hot dogs, marshmallows, and more. Designed for easy setup, it's a practical addition to any campfire gathering for a perfectly cooked treat every time.</p>
-      <div class="price">$25.00</div>
-    </div>
-
-    <div class="item">
-      <img src="BBQ forks.jpg" alt="BBQ Fork" />
-      <h2>BBQ Fork</h2>
-      <p>This hand-forged BBQ fork is crafted from durable steel, ensuring long-lasting performance for all your grilling needs. Its comfortable grip provides ease of use, making it ideal for extended cooking sessions. With a multi-functional design, it’s perfect for turning, lifting, and serving a variety of grilled foods effortlessly.</p>
-      <div class="price">$30.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_bellow pipe.jpg" alt="Fire Pit Bellow Pipe" />
-      <h2>Fire Pit Bellow Pipe</h2>
-      <p>This hand-forged fire pit bellow pipe is crafted from durable steel and treated with canola oil for rust protection. Designed for efficient airflow, it helps you easily ignite embers and maintain your fire. Built for functionality and durability, it's an essential tool for any outdoor fire setup.</p>
-      <div class="price">$20.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_candle holder.PNG" alt="Candle Holder" />
-      <h2>Candle Carrier</h2>
-      <p>This hand-forged candle carrier combines a stylish design with durable steel construction for long-lasting use. Its versatile design makes it suitable for a variety of settings, from home decor to outdoor gatherings. A practical and elegant solution for holding candles securely.</p>
-      <div class="price">$40.00</div>
-    </div>
-
-    <div class="item">
-      <img src="trianle dinner bell.jpg" alt="Triangle Dinner Bell" />
-      <h2>Triangle Dinner Bell</h2>
-      <p>This hand-forged triangle dinner bell with ringer combines rustic design with timeless functionality. Crafted from durable metal, it produces a classic western sound perfect for gatherings or signaling mealtime. Its easy-to-use design makes it a charming addition to any home or outdoor space.</p>
-      <div class="price">$35.00</div>
-    </div>
-
-    <div class="item">
-      <img src="leaf keychain.jpg" alt="Leaf Keychain" />
-      <h2>Leaf Keychain</h2>
-      <p>This hand-forged leaf keychain features a nature-inspired design that adds a unique touch to your everyday essentials. Crafted from durable materials, it ensures long-lasting use while maintaining its elegant appearance. Its convenient size makes it easy to carry and perfect for securing your keys in style.</p>
-      <div class="price">$10.00</div>
-    </div>
-
-    <div class="item">
-      <img src="rail spike bottle openers.jpg" alt="Railroad Spike Bottle Opener" />
-      <h2>Railroad Spike Bottle Opener</h2>
-      <p>This bottle opener is crafted from a genuine steel railroad spike, blending durability with a distinctive, industrial aesthetic. Its unique design ensures reliable functionality while doubling as a conversation piece. Perfect for opening bottles with ease, it adds a touch of rustic charm to any kitchen or bar setup. A versatile and practical tool inspired by timeless craftsmanship.</p>
-      <div class="price">$25.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_spike cross.PNG" alt="Railroad Spike Cross" />
-      <h2>Railroad Spike Cross</h2>
-      <p>This handcrafted cross is forged from a single steel railroad spike, showcasing exceptional craftsmanship. The spike is skillfully cut, folded, and shaped, creating a unique and durable design. With a flattened bottom, it stands securely, making it an ideal decorative piece. Its rustic charm and intricate detailing make it a standout addition to any space.</p>
-      <div class="price">$45.00</div>
-    </div>
-
-    <div class="item">
-      <img src="IMG_hanging cross.JPG" alt="Hanging Folded Cross" />
-      <h2>Hanging Folded Cross</h2>
-      <p>Crafted from a single piece of steel, this hanging folded cross seamlessly combines durability with elegance. Unfolded into a striking cross shape, it showcases a minimalist yet bold design. Perfect for hanging, it adds a unique and meaningful touch to any space.</p>
-      <div class="price">$35.00</div>
-    </div>
+  <div class="item">
+    <img src="bbq fork.png" alt="BBQ Fork" />
+    <h2>BBQ Fork</h2>
+    <p>Heavy-duty fork forged from high carbon steel with elegant twists and a curled hanging loop.</p>
+    <div class="price">$50</div>
   </div>
+</div>
 
-  <div class="instagram-embed">
-    <blockquote class="instagram-media"
-      data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/"
-      data-instgrm-version="14"
-      style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px auto; padding:0; width:100% !important; max-width:270px !important; min-width:200px !important;">
-    </blockquote>
-  </div>
+<div class="instagram-embed">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMY-6ZVuIVb/" data-instgrm-version="14"></blockquote>
+</div>
 
-  <script async src="https://www.instagram.com/embed.js"></script>
-  <script>
-    window.addEventListener('load', () => {
-      if (window.instgrm) {
-        window.instgrm.Embeds.process();
-      }
-    });
-  </script>
+<script async src="https://www.instagram.com/embed.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  });
+</script>
 
 </body>
 </html>
