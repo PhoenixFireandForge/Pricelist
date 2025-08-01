@@ -13,9 +13,7 @@
       margin: 0;
       padding: 40px;
       font-family: 'Segoe UI', sans-serif;
-
-      /* Desktop Background Image */
-      background-image: url('logo PFF.PNG'); /* <-- CHANGE THIS */
+      background-image: url('logo PFF.PNG');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -28,7 +26,7 @@
       body {
         background-image:
           linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url('website mobile background.png'); /* <-- CHANGE THIS */
+          url('website mobile background.png');
         background-size: contain;
         background-repeat: repeat-y;
         background-position: top center;
@@ -43,7 +41,7 @@
       }
 
       h1 {
-        font-size: 2em; /* Mobile size stays the same */
+        font-size: 2em;
         padding: 10px 0;
       }
 
@@ -52,7 +50,6 @@
         gap: 20px;
       }
 
-      /* Mobile-specific product tweaks */
       .item img {
         max-width: 90%;
         height: auto;
@@ -83,7 +80,7 @@
 
     h1 {
       font-family: 'Almendra', serif;
-      font-size: 5.5em; /* Bigger on desktop */
+      font-size: 5.5em;
       font-weight: 900;
       text-align: center;
       color: #e0d5b9;
@@ -93,7 +90,6 @@
       padding: 20px 0;
     }
 
-    /* NAVIGATION BAR STYLES */
     nav {
       margin-bottom: 30px;
     }
@@ -105,6 +101,7 @@
       justify-content: center;
       gap: 30px;
       margin: 0 0 30px 0;
+      align-items: center;
     }
 
     nav ul li a {
@@ -123,6 +120,19 @@
       font-weight: 900;
       text-decoration: underline;
       color: #ff4500;
+    }
+
+    nav ul li img {
+      width: 144px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ff8c00;
+      transition: transform 0.2s ease;
+    }
+
+    nav ul li img:hover {
+      transform: scale(1.05);
     }
 
     .instagram-embed {
@@ -176,7 +186,6 @@
       margin-top: 10px;
     }
 
-    /* Social icons container styling */
     .social-links {
       display: flex;
       justify-content: center;
@@ -199,23 +208,37 @@
 </head>
 <body>
 
-  <!-- NAVIGATION BAR - ADD HERE -->
+  <!-- NAVIGATION -->
   <nav>
     <ul>
       <li><a href="index.html" class="active">Price List</a></li>
-      <li><a href="aboutpagenew.html">About</a></li>
+      <li>
+        <a href="your-page-1.html">
+          <img src="your-image-1.png" alt="Image Link 1" />
+        </a>
+      </li>
+      <li>
+        <a href="your-page-2.html">
+          <img src="your-image-2.png" alt="Image Link 2" />
+        </a>
+      </li>
     </ul>
   </nav>
-  <!-- END NAVIGATION BAR -->
 
   <div class="header-container">
     <h1>PHOENIX FIRE AND FORGE</h1>
   </div>
 
-  <!-- Social icons will be inserted here by script -->
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/g/1BrMC8yqgF/" target="_blank" title="Join us on Facebook">
+      <img src="fire facebook logo.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/phoenixFireandForge" target="_blank" title="Follow us on Instagram">
+      <img src="fire instagram.png" alt="Instagram" />
+    </a>
+  </div>
 
   <div class="catalog">
-
     <div class="item">
       <img src="new fire pokers.jpg" alt="Fire poker" />
       <h2>Fire Poker</h2>
@@ -299,7 +322,6 @@
       <p>Crafted from a single piece of steel, this hanging folded cross seamlessly combines durability with elegance. Unfolded into a striking cross shape, it showcases a minimalist yet bold design. Perfect for hanging, it adds a unique and meaningful touch to any space.</p>
       <div class="price">$35.00</div>
     </div>
-
   </div>
 
   <div class="instagram-embed">
@@ -316,45 +338,6 @@
       if (window.instgrm) {
         window.instgrm.Embeds.process();
       }
-    });
-  </script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const header = document.querySelector('.header-container');
-
-      // Create container div
-      const socialDiv = document.createElement('div');
-      socialDiv.className = 'social-links';
-
-      // Facebook link & image
-      const fbLink = document.createElement('a');
-      fbLink.href = 'https://www.facebook.com/share/g/1BrMC8yqgF/';
-      fbLink.target = '_blank';
-      fbLink.title = 'Join us on Facebook';
-
-      const fbImg = document.createElement('img');
-      fbImg.src = 'fire facebook logo.png'; // <-- Replace with your Facebook icon URL
-      fbImg.alt = 'Facebook';
-
-      fbLink.appendChild(fbImg);
-      socialDiv.appendChild(fbLink);
-
-      // Instagram link & image
-      const instaLink = document.createElement('a');
-      instaLink.href = 'https://www.instagram.com/phoenixFireandForge';
-      instaLink.target = '_blank';
-      instaLink.title = 'Follow us on Instagram';
-
-      const instaImg = document.createElement('img');
-      instaImg.src = 'fire instagram.png'; // <-- Replace with your Instagram icon URL
-      instaImg.alt = 'Instagram';
-
-      instaLink.appendChild(instaImg);
-      socialDiv.appendChild(instaLink);
-
-      // Insert social links div right after the header
-      header.insertAdjacentElement('afterend', socialDiv);
     });
   </script>
 
