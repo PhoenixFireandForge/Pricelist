@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phoenix Fire & Forge - Home</title>
-  <link rel="stylesheet" href="styles.css" /> <!-- Assumes your background is in here -->
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-size: cover;
-      background-position: center;
       text-align: center;
       color: white;
     }
 
-    .container {
+    /* 🔥 Fixed background section */
+    .background-section {
+      background-image: url('logo PFF.PNG'); /* 🔁 Replace this with your image file */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* ✅ Keeps it still when scrolling */
+      min-height: 100vh;
       padding: 40px 20px;
     }
 
@@ -57,20 +61,19 @@
 </head>
 <body>
 
-  <div class="container">
+  <!-- 🔥 Fixed background section begins -->
+  <div class="background-section">
     <h1>Welcome to Phoenix Fire & Forge</h1>
 
     <div class="image-links">
       <!-- 🔗 Image 1 -->
-      <a href="pricelist.html"> <!-- Replace PAGE1.html with the actual page -->
-        <img src="price list image.png" alt="Link to Page 1" />
-        <!-- Replace IMAGE1.jpg with your actual image file -->
+      <a href="pricelist.html">
+        <img src="price list image.png" alt="Link to Price List" />
       </a>
 
       <!-- 🔗 Image 2 -->
-      <a href="aboutpagenew.html"> <!-- Replace PAGE2.html with the actual page -->
-        <img src="about image for website.PNG" alt="Link to Page 2" />
-        <!-- Replace IMAGE2.jpg with your actual image file -->
+      <a href="aboutpagenew.html">
+        <img src="about image for website.PNG" alt="Link to About Page" />
       </a>
     </div>
   </div>
